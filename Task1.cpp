@@ -3,37 +3,37 @@
 #include <thread>
 using namespace std;
 
-// Задание 1.1
+// Р—Р°РґР°РЅРёРµ 1.1
 int main1()
 {
     setlocale(LC_ALL, "Russian");
-    cout << "Булево: " << sizeof(bool) << " байт." << endl;
-    cout << "Строка: " << sizeof(char) << " байт." << endl;
-    cout << "Unsigned строка" << sizeof(unsigned char) << " байт" << endl;
-    cout << "Целое число: " << sizeof(int) << " байт." << endl;
-    cout << "Unsigned целое число: " << sizeof(unsigned int) << " байт." << endl;
-    cout << "Short: " << sizeof(short) << " байт." << endl;
-    cout << "Unsigned short: " << sizeof(unsigned short) << " байт." << endl;
-    cout << "Long: " << sizeof(long) << " байт." << endl;
-    cout << "Unsigned long" << sizeof(unsigned long) << " байт." << endl;
-    cout << "Long long" << sizeof(long long) << " байт." << endl;
-    cout << "Unsigned long long" << sizeof(unsigned long long) << " байт." << endl;
-    cout << "Число типа float: " << sizeof(float) << " байт." << endl;
-    cout << "Число типа double: " << sizeof(double) << " байт." << endl;
+    cout << "Р‘СѓР»РµРІРѕ: " << sizeof(bool) << " Р±Р°Р№С‚." << endl;
+    cout << "РЎС‚СЂРѕРєР°: " << sizeof(char) << " Р±Р°Р№С‚." << endl;
+    cout << "Unsigned СЃС‚СЂРѕРєР°" << sizeof(unsigned char) << " Р±Р°Р№С‚." << endl;
+    cout << "Р¦РµР»РѕРµ С‡РёСЃР»Рѕ: " << sizeof(int) << " Р±Р°Р№С‚." << endl;
+    cout << "Unsigned С†РµР»РѕРµ С‡РёСЃР»Рѕ: " << sizeof(unsigned int) << " Р±Р°Р№С‚." << endl;
+    cout << "Short: " << sizeof(short) << " Р±Р°Р№С‚." << endl;
+    cout << "Unsigned short: " << sizeof(unsigned short) << " Р±Р°Р№С‚." << endl;
+    cout << "Long: " << sizeof(long) << " Р±Р°Р№С‚." << endl;
+    cout << "Unsigned long" << sizeof(unsigned long) << " Р±Р°Р№С‚." << endl;
+    cout << "Long long" << sizeof(long long) << " Р±Р°Р№С‚." << endl;
+    cout << "Unsigned long long" << sizeof(unsigned long long) << " Р±Р°Р№С‚." << endl;
+    cout << "Р§РёСЃР»Рѕ С‚РёРїР° float: " << sizeof(float) << " Р±Р°Р№С‚." << endl;
+    cout << "Р§РёСЃР»Рѕ С‚РёРїР° double: " << sizeof(double) << " Р±Р°Р№С‚." << endl;
     return 0;
 }
 
-// Задание 1.2
+// Р—Р°РґР°РЅРёРµ 1.2
 int main2()
 {
     unsigned char a = 255;
-    cout << "До переполнения: " << int(a) << endl;
+    cout << "Р”Рѕ РїРµСЂРµРїРѕР»РЅРµРЅРёСЏ: " << int(a) << endl;
     a += 1;
-    cout << "После переполнения: " << int(a) << endl;
+    cout << "РџРѕСЃР»Рµ РїРµСЂРµРїРѕР»РЅРµРЅРёСЏ: " << int(a) << endl;
     return 0;
 }
 
-// Задание 1.3
+// Р—Р°РґР°РЅРёРµ 1.3
 int main3()
 {
     float a = 0.1;
@@ -49,7 +49,7 @@ int main3()
     return 0;
 }
 
-// Задание 1.4
+// Р—Р°РґР°РЅРёРµ 1.4
 int main()
 {
     auto start = chrono::high_resolution_clock::now();
@@ -61,5 +61,5 @@ int main()
     cout << main1() << endl;
     cout << main2() << endl;
     cout << main3() << endl;
-    cout << "Время выполнения: " << duration.count() << " миллисекунд\n";
+    cout << "Р’СЂРµРјСЏ РІС‹РїРѕР»РЅРµРЅРёСЏ: " << duration.count() << " РјРёР»Р»РёСЃРµРєСѓРЅРґ" << endl;
 }
