@@ -2,7 +2,6 @@
 #include <cstdint>
 using namespace std;
 
-// Статусы заказа
 enum class OrderStatus : uint8_t {
     Created,
     Paid,
@@ -11,14 +10,12 @@ enum class OrderStatus : uint8_t {
     Cancelled
 };
 
-// Структура заказа
 struct Order {
     int id;
     double totalPrice;
     OrderStatus status;
 };
 
-// Проверка допустимости перехода
 bool canChangeStatus(OrderStatus from, OrderStatus to) {
     switch (from) {
         case OrderStatus::Created:
@@ -36,7 +33,6 @@ bool canChangeStatus(OrderStatus from, OrderStatus to) {
     return false;
 }
 
-// Изменение статуса заказа
 bool changeStatus(Order& order, OrderStatus newStatus) {
     if (!canChangeStatus(order.status, newStatus)) {
         return false;
@@ -45,7 +41,6 @@ bool changeStatus(Order& order, OrderStatus newStatus) {
     return true;
 }
 
-// Вывод статуса
 const char* statusToString(OrderStatus status) {
     switch (status) {
         case OrderStatus::Created:   return "Created";
