@@ -2,14 +2,12 @@
 #include <string>
 using namespace std;
 
-// Абстрактный базовый класс
 class Transport {
 public:
     virtual void move() const = 0;
     virtual ~Transport() = default;
 };
 
-// Первый производный класс
 class Car : public Transport {
 private:
     string brand;
@@ -21,7 +19,6 @@ public:
     }
 };
 
-// Второй производный класс
 class Bicycle : public Transport {
 private:
     int gears;
@@ -33,7 +30,6 @@ public:
     }
 };
 
-// Третий производный класс
 class Airplane : public Transport {
 private:
     int maxAltitude;
